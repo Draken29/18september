@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مراجعة ل counter and var</title>
+    <style>
+        :root{
+            --blue:blue;
+        }
+        body{
+            background-color: var(--blue);
+        }
+        ol li{
+            counter-increment: hello+2;
+            list-style: none;
+        }
+        ol li::before{
+            content:counter(hello)":";
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>learn html in arabic with coder shyear</li>
+        <li>learn css in arabic with coder shyear</li>
+        <li>learn java script with coder shyear</li>
+        <li>learn sql with coder shear</li>
+        <li>learn php with coder shyear</li>
+    </ol>
+</body>
+</html>
